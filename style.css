@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dongle', sans-serif;
+    background:  linear-gradient(to right, #728bb3, #052861);
+    font-size: 30px;
+    font-weight: 400;
+    min-width: 450px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #300a26c7;
+}
+h2{
+    text-align: center;
+    color: rgb(235, 223, 223);
+    text-shadow: 2px 2px 4px black;
+}
+h3{
+    text-align: center;
+    color: rgb(235, 223, 223);
+    text-shadow: 2px 2px 4px black;
+    background-color: #300a26c7;
+    padding: 0;
+    margin: 0;
+}
+.bmi-inputs{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: yellow;
+    text-shadow: 1px 1px 3px black;
+}
+table, label{
+    text-align: center;
+}
+table, th, td{
+    padding: 10px; 
+    margin: 5px;
+}
+input[type=text]{
+    height: 40px;
+    padding: 10px;
+    margin: 5px 3px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid yellow;
+    background: transparent;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    color: yellow;
+    width: 100px;
+}
+input[type=text]:focus{
+    background: #300a268f;
+    border: 2px solid black;
+}
+#pounds{
+    transition: width 0.5s ease-in-out;
+}
+#pounds:focus{
+    width: 200px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+input[type=button]{
+    margin: 10px 0;
+    padding: 0px 12px 5px 12px;
+    height: 40px;
+    background-color: yellow;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    color: linear-gradient(to right, #728bb3, #052861);
+    transition: 0.3s ease-in-out;
+}
+input[type=button]:hover{
+    box-shadow: 3px 3px 5px black;
+}
+p {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(149, 160, 255);
+    text-shadow: 2px 2px 5px black;
+}
+.blah{
+    display: grid;
+    justify-items: center;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+}
+.switch{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0px; right: 0; bottom: 0;
+    background: white;
+    transition: .5s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    bottom: 14px;
+    top: 8px;
+    background: rgb(0, 191, 255);
+    transition: .5s;
+}
+.switch input{display:none;}
+input:checked + .slider {
+    background: black;
+}
+.slider.round {
+    border-radius: 35px;
+}
+.slider.round:before{
+    width: 43%;
+    height: 43%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: translateX(-50px) rotateZ(-45deg) 
+}
+input:checked + .slider:before{
+    transform: translateX(7px) rotateZ(45deg);
+    background: yellow;
+}
+
+@media (max-width: 500px){
+    .switch{
+        width: 60px;
+        height: 30px;
+        position: relative;
+        top: 10px;
+    }
+    .slider.round:before{
+        width: 39%;
+        height: 39%;
+        transform: translateX(-30px) translateY(-3px) rotateZ(-45deg);
+    }
+    input:checked + .slider:before{
+        transform: rotateZ(45deg) translateX(1px) translateY(-5px);
+    }
+    body{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    table, th, td{
+        padding: 5px; 
+        margin: 5px;
+    }
+}

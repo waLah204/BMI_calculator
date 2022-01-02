@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Your BMI Calculator</h2>
+        
+    <div id="toggle" class="blah">
+        <label class = "switch">
+            <input id="checkBox" type = "checkbox">
+            <span class = "slider round"></span>
+        </label>
+    </div>
+    </div>
+    <h3 id="modelExpression">(Standard)</h3>
+    <form class="bmi-inputs">
+        <table>
+            <tr>
+                <td></td>
+                <td><label id="feetLabel" for="feet">Feet</label></th>
+                <td><label id="inchesLabel" for="inches">Inches</label> </th>
+            </tr>
+            <tr>
+                <td><label>Your Height:</label></td>
+                <td><input id="feed" type="text" name="feet"></td>
+                <td><input id="inches" type="text" name="inches"></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td></td>
+                <td colspan="2"><label id="poundsLabel" for="pounds">Pounds</label></td>
+            </tr>
+            <tr>
+                <td><label>Your Weight:</label></td>
+                <td colspan="2"><input id="pounds" type="text" name="pounds"></td>
+            </tr>
+        </table>
+    </form>
+    <div class="btn">
+        <input id="result-btn-btn" type="button" value="Compute BMI">
+    </div> 
+            <p id="BMI-result"></p>
+            <p id="BMI-result-text"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
