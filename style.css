@@ -164,4 +164,11 @@ input:checked + .slider:before{
         padding: 5px; 
         margin: 5px;
     }
+h2, h3{
+        font-size: 1.25rem;
+    }
+    table{
+        padding-left: 0;
+        margin-left: 0;
+    }
 }
